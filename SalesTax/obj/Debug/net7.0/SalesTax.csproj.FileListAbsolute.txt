@@ -1,0 +1,15 @@
+/Users/hita/Projects/SalesTax/SalesTax/bin/Debug/net7.0/SalesTax
+/Users/hita/Projects/SalesTax/SalesTax/bin/Debug/net7.0/SalesTax.deps.json
+/Users/hita/Projects/SalesTax/SalesTax/bin/Debug/net7.0/SalesTax.runtimeconfig.json
+/Users/hita/Projects/SalesTax/SalesTax/bin/Debug/net7.0/SalesTax.dll
+/Users/hita/Projects/SalesTax/SalesTax/bin/Debug/net7.0/SalesTax.pdb
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.csproj.AssemblyReference.cache
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.AssemblyInfoInputs.cache
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.AssemblyInfo.cs
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.csproj.CoreCompileInputs.cache
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.dll
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/refint/SalesTax.dll
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.pdb
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/SalesTax.genruntimeconfig.cache
+/Users/hita/Projects/SalesTax/SalesTax/obj/Debug/net7.0/ref/SalesTax.dll
