@@ -1,6 +1,4 @@
-﻿
-using System;
-namespace SalesTax
+﻿namespace SalesTax
 {
     public class ReceiptItem
     {
@@ -10,7 +8,6 @@ namespace SalesTax
         public bool IsImported { get; set; }
         public bool IsExempt { get; set; }
         public decimal TotalPrice => Quantity * Price;
-        // checking the git
         public ReceiptItem(string name, decimal price, int quantity, bool isImported, bool isExempt)
         {
             Name = name;

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SalesTax
+﻿namespace SalesTax
 {
     public class ReceiptItemParser : IReceiptItemParser
     {
