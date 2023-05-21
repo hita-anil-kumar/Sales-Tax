@@ -11,13 +11,15 @@
             List<ReceiptItem> items = new List<ReceiptItem>();
 
             Console.Write("Enter the number of items in the basket: ");
-            int itemCount = int.Parse(Console.ReadLine());
+            string? itemCountInput = Console.ReadLine();
+
+            int itemCount = int.Parse(itemCountInput!);
 
             Console.WriteLine("Enter the receipt items (one item per line): ");
             for (int i = 0; i < itemCount; i++)
             {
-                string line = Console.ReadLine();
-                ReceiptItem item = receiptGenerator.ParseReceiptItem(line);
+                string? line = Console.ReadLine();
+                ReceiptItem item = receiptGenerator.ParseReceiptItem(line!);
                 items.Add(item);
             }
 
@@ -26,3 +28,4 @@
         }
     }
 }
+

@@ -1,12 +1,11 @@
 ﻿using NUnit.Framework;
 
-
 namespace SalesTax.Tests
 {
     [TestFixture]
     public class ReceiptGeneratorTests
     {
-        private IReceiptGenerator receiptGenerator;
+        private IReceiptGenerator? receiptGenerator;
 
         [SetUp]
         public void Setup()
@@ -26,9 +25,10 @@ namespace SalesTax.Tests
             };
 
             // Act
-            string receipt = receiptGenerator.GenerateReceipt(items);
+            string? receipt = receiptGenerator?.GenerateReceipt(items);
 
             // Assert
+            Assert.IsNotNull(receipt);
             string expectedReceipt =
                 "Output: 1 book: 12.49\n" +
                 "1 music CD: 16.49\n" +
@@ -49,9 +49,10 @@ namespace SalesTax.Tests
             };
 
             // Act
-            string receipt = receiptGenerator.GenerateReceipt(items);
+            string? receipt = receiptGenerator?.GenerateReceipt(items);
 
             // Assert
+            Assert.IsNotNull(receipt);
             string expectedReceipt =
                 "Output: 1 imported box of chocolates: 10.50\n" +
                 "1 imported bottle of perfume: 54.65\n" +
@@ -73,9 +74,10 @@ namespace SalesTax.Tests
             };
 
             // Act
-            string receipt = receiptGenerator.GenerateReceipt(items);
+            string? receipt = receiptGenerator?.GenerateReceipt(items);
 
             // Assert
+            Assert.IsNotNull(receipt);
             string expectedReceipt =
                 "Output: 1 imported bottle of perfume: 32.19\n" +
                 "1 bottle of perfume: 20.89\n" +
