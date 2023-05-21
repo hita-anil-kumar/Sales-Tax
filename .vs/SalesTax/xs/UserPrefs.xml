@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{513871E6-C1A3-42CF-8D70-19C22C2612D8}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.SalesTax FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.SalesTax PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SalesTax/ReceiptGenerator.Tests.cs">
+    <Files>
+      <File FileName="SalesTax/ReceiptGenerator.cs" Line="1" Column="1" />
+      <File FileName="SalesTax/ReceiptItem.cs" Line="1" Column="1" />
+      <File FileName="SalesTax/ReceiptItemParser.cs" Line="1" Column="1" />
+      <File FileName="SalesTax/ReceiptPrinter.cs" Line="1" Column="1" />
+      <File FileName="SalesTax/ReceiptGenerator.Tests.cs" Line="11" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SalesTax" expanded="True">
+            <Node name="SalesTax" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

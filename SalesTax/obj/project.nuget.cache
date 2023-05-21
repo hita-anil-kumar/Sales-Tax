@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TXLgTQadQvw/PdapyHS1zaK04p5lw6JjzRzrR3+vQ6lCC3tFSSi6/OL4WE0GOKMHPdmopxcX0IFW0Yo1HytmgA==",
+  "dgSpecHash": "51ZZLwAhhG5wCfyRYmvCPv0t7zC8zsApPB4E5dI9n+h8aodzM15fOLwBFwGxnaljMWNyZ+gCfTq/d93MuYFffw==",
   "success": true,
-  "projectFilePath": "/Users/hita/Projects/SalesTax/SalesTax/SalesTax.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/hita/Desktop/SalesTax/SalesTax/SalesTax.csproj",
+  "expectedPackageFiles": [
+    "/Users/hita/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/hita/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
+    "/Users/hita/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
+    "/Users/hita/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512"
+  ],
   "logs": []
 }

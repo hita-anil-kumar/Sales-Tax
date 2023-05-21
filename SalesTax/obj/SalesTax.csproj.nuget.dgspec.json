@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/hita/Projects/SalesTax/SalesTax/SalesTax.csproj": {}
+    "/Users/hita/Desktop/SalesTax/SalesTax/SalesTax.csproj": {}
   },
   "projects": {
-    "/Users/hita/Projects/SalesTax/SalesTax/SalesTax.csproj": {
+    "/Users/hita/Desktop/SalesTax/SalesTax/SalesTax.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/hita/Projects/SalesTax/SalesTax/SalesTax.csproj",
+        "projectUniqueName": "/Users/hita/Desktop/SalesTax/SalesTax/SalesTax.csproj",
         "projectName": "SalesTax",
-        "projectPath": "/Users/hita/Projects/SalesTax/SalesTax/SalesTax.csproj",
+        "projectPath": "/Users/hita/Desktop/SalesTax/SalesTax/SalesTax.csproj",
         "packagesPath": "/Users/hita/.nuget/packages/",
-        "outputPath": "/Users/hita/Projects/SalesTax/SalesTax/obj/",
+        "outputPath": "/Users/hita/Desktop/SalesTax/SalesTax/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/hita/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,16 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.4.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
