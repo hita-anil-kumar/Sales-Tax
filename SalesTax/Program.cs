@@ -4,9 +4,13 @@
     {
         static void Main(string[] args)
         {
+
             IReceiptItemParser itemParser = new ReceiptItemParser();
-            IReceiptPrinter receiptPrinter = new ReceiptPrinter();
+            ITaxCalculator taxCalculator = new TaxCalculator(); 
+            IReceiptPrinter receiptPrinter = new ReceiptPrinter(taxCalculator); 
             IReceiptGenerator receiptGenerator = new ReceiptGenerator(itemParser, receiptPrinter);
+
+
 
             List<ReceiptItem> items = new List<ReceiptItem>();
 

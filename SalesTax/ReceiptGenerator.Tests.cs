@@ -10,7 +10,9 @@ namespace SalesTax.Tests
         [SetUp]
         public void Setup()
         {
-            receiptGenerator = new ReceiptGenerator(new ReceiptItemParser(), new ReceiptPrinter());
+            ITaxCalculator taxCalculator = new TaxCalculator(); 
+            receiptGenerator = new ReceiptGenerator(new ReceiptItemParser(), new ReceiptPrinter(taxCalculator)); 
+
         }
 
         [Test]

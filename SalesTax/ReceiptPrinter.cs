@@ -4,6 +4,13 @@ namespace SalesTax
 {
     public class ReceiptPrinter : IReceiptPrinter
     {
+        private readonly ITaxCalculator taxCalculator;
+
+        public ReceiptPrinter(ITaxCalculator taxCalculator)
+        {
+            this.taxCalculator = taxCalculator;
+        }
+
         public string GenerateReceipt(List<ReceiptItem> items)
         {
             decimal totalAmount = 0m;
@@ -12,7 +19,7 @@ namespace SalesTax
 
             foreach (ReceiptItem item in items)
             {
-                decimal itemTax = CalculateTax(item);
+                decimal itemTax = taxCalculator.CalculateTax(item);
                 decimal itemTotal = item.Price * item.Quantity + itemTax;
 
                 totalAmount += itemTotal;
@@ -25,35 +32,6 @@ namespace SalesTax
             sb.AppendLine($"Total: {totalAmount:F2}");
 
             return "Output:\n" + sb.ToString();
-
-        }
-
-        private decimal CalculateTax(ReceiptItem item)
-        {
-            decimal taxRate = GetTaxRate(item);
-            decimal itemTax = Math.Ceiling(item.Price * item.Quantity * taxRate * 20) / 20;
-            return itemTax;
-        }
-
-        private decimal GetTaxRate(ReceiptItem item)
-        {
-            decimal taxRate = 0.1m; // Basic sales tax rate
-
-            if (item.IsImported && !item.IsExempt)
-            {
-                taxRate += 0.05m; // Additional tax for imported items
-            }
-            else if (item.IsImported && item.IsExempt)
-            {
-                taxRate = 0.05m; // No tax for exempt imported items
-            }
-            else if (item.IsExempt && !item.IsImported)
-            {
-                taxRate = 0m; // No tax for exempt items
-            }
-
-            return taxRate;
         }
     }
 }
-
